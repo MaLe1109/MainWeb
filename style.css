@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(1, 1, 53);
+    color: white;
+}
+
+/*Header*/
+header {
+    background: rgb(255, 254, 254);
+    padding: 20px 20px;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+header .dunkelblau {
+    color: rgb(2, 2, 71);
+}
+
+header .blau {
+    color: blue;
+}
+
+header .navbar {
+    margin-top: 15px;
+}
+
+header .navbar a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(55, 55, 233);
+    font-weight: 700;
+}
+
+header .navbar a:hover {
+    text-decoration: underline 2px solid blue;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+header .logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+/*start*/
+
+
+.start {
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 100px;
+}
+
+.start .start-box {
+    border: 2px solid blue;
+    border-radius: 12px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.start-box button {
+    position: relative;
+    padding: 10px 30px;
+    margin-top: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+.start-box button:hover {
+    background: blue;
+    color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+
+/*Überuns*/
+
+
+.überuns {
+    width: 80%;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+
+.überuns h2 {
+    margin-top: 100px;
+    border: none;
+    border-radius: 8px;
+    background: blue;
+}
+
+
+/*Übertext*/
+
+.übertext {
+    font-weight: 700;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 200px;
+    gap: 20px;
+    align-items: start;
+}
+
+.übertext h3,
+.übertext p {
+    grid-column: 1;
+    margin: 0 0 10px;
+}
+
+.übertext img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    grid-column: 2;
+    grid-row: 1 / span 10;
+    justify-self: end;
+    position: static;
+}
+
+
+.übertext strong {
+    color: rgb(40, 40, 241);
+}
+
+
+/*Card*/
+
+.card {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    padding: 10px 10px;
+    font-weight: 700;
+}
+
+
+.card input {
+padding: 10px 10px;
+border: none;
+border-radius: 8px;
+color: blue;
+font-weight: 700;
+}
+
+.card input:hover {
+transition: 0.5s;
+transform: scale(1.02);
+border-top: 3px solid blue;
+outline: none;
+}
+
+.card input:focus{
+transform: scale(1.05);
+}
+
+.card button {
+padding: 10px 10px;
+border: none;
+border-radius: 8px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.card button:hover{
+    transition: 0.5s;
+background: blue;
+color: white;
+}
+
+
+
+.dunkelblau {
+    color: rgb(2, 2, 71);
+}
+
+.blau {
+color: blue;
+}
