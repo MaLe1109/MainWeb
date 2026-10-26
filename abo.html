@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abo | MainWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span class="dunkelblau">Main</span><span class="blau">Web</span>
+        </h1>
+
+        <img class="logo" src="assets/MainWeb Logo .png">
+
+        <nav class="navbar"> 
+            <a href="index.html">Home</a> 
+            <a href="über.html">Über uns</a> 
+            <a href="#anfrage">Anfrage</a> 
+            <a href="abo.html">Premium</a> 
+            <a href="login.html">Anmelden</a> 
+        </nav> 
+    </header>
+    
+    <div class="chackout">
+        <h1>
+            <span class="dunkelblau">Check</span><span class="blau">out</span>
+        </h1>
+
+        <div class="abo-card-title">
+            <h3>
+                Du willst also <strong id="abo"></strong>
+            </h3>
+            <p>Dann fühle einfach das Formula aus.</p>
+        </div>
+
+        <form action="/MainWeb/app.py" method="post" class="abo-card">
+            <label for="bname"><span class="dunkelblau">Na</span><span class="blau">me</span></label>
+            <input name="name" type="text" placeholder="Max Mustermann" required>
+
+            <label for="email"><span class="dunkelblau">E-</span><span class="blau">Mail</span></label>
+            <input name="email" type="email" placeholder="deine@Email.com" required>
+
+            <label for="date"><span class="dunkelblau">Da</span><span class="blau">tum</span></label>
+            <input name="datum" type="date" required>
+
+            <label for="bay"><span class="dunkelblau">Kredit</span><span class="blau">karte</span></label>
+            <input type="number" placeholder="Kreditkarten Nr.">
+
+
+            <label for=""><span class="dunkelblau">Daten</span><span class="blau">schutz</span></label>
+            <p>Ich aktzepiere alle Daten- und Nutzeungsbedinugen beim buchen eines Abo's bei MainWeb.com</p>
+            <a href="über.html"><p>Hier zu denn Daten- Nutzungsbedingungen von MainWeb.com ➡</p></a>
+           
+            <input type="checkbox" class="check" required>
+
+                <button type="submit">Checkout</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const abo = params.get("abo");
+
+        document.getElementById("abo").textContent = abo;
+    </script>
+</body>
+<script src="script.js"></script>
+</html>

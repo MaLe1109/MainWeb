@@ -1,9 +1,17 @@
-const bname = document.getElementById("bname")
-const password = document.getElementById("password")
-const login = document.getElementById("login")
+const standart = document.getElementById("standartButton");
 
+const standartplus = document.getElementById("standartplusButton");
 
-login.addEventListener("click", function(){
-    if(bname.value === "Malte Lehmann" && password.value === "1109")
-        alert("Willkommen" + bname.value)
-})
+const premium = document.getElementById("premiumButton");
+
+standart.addEventListener("click", () => {
+    window.location.href = "abo.html?abo=standard";
+});
+
+standartplus.addEventListener("click", () => {
+    window.location.href = "abo.html?abo=standard-plus";
+});
+
+premium.addEventListener("click", () => {
+    window.location.href = "abo.html?abo=premium";
+});

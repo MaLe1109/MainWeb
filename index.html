@@ -1,82 +1,135 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainWeb</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="MainWeb Logo .png">
-</head>
-
-<body>
-
-    <header id="home" class="header">
-        <h1>
-            <span class="dunkelblau">Main</span><span class="blau">Web</span>
-        </h1>
-
-        <a href="index.html">
-        <img class="logo" src="MainWeb Logo .png">
-        </a>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#überuns">Über uns</a>
-            <a href="#anfrage">Anfrage</a>
-            <a href="#premium">Premium</a>
-            <a href="login.html">Anmelden</a>
-        </nav>
-    </header>
-
-
-
-    <div class="start">
-        <div class="start-box">
-            <h2>Fang jetzt an!</h2>
-            <p>Ganz einfach eine Anfrage über unser anfrage Formula senden.</p>
-            <p>Und innerhalb von 2-3 Tagen eine Antwort erhalten!</p>
-            <p>Je nachdem wie Groß oder auffändig es ist wir erstellen ihne ihre eigene Website.</p>
-            <a href="#anfrage">   
-            <button>Leg ist los!</button>
-            </a> 
-        </div>
-    </div>
-
-
-    <div id="überuns" class="überuns">
-        <h2>Über uns</h2>
-        <div class="übertext">
-            <h3>Willkommen</h3>
-            <p>Hallo ich heiße Malte Lehmann und ich bin 14 jahre alt.</p>
-            <p>Mit 14 Jahre hat man nicht viele einnahme Quellen.</p>
-            <p>Deshalb Verkaufe ich das was ich grade am besten kann <strong>Websiten.</strong></p>
-            <p>Also Sendet anfragen und habt in weniger als 1 Woche deine eigene Website.</p>
-            <img src="Malte bild.png" alt="">
-            
-            <div class="m_bild">
-                
-            </div>
-        </div>
-
-    </div>
-
-    <div id="anfrage" class="anfrage">
-        <h2>Anfragen</h2>
-    </div>
-
-
-    <div id="premium" class="premium">
-        <h2>Premium</h2>
-        <div class="viptabel">
-            <table></table>
-        </div>
-    </div>
-
-    <footer>
-        <h5>MainWeb © 2026</h5>
-    </footer>
-</body>
-<script src="script.js"></script>
-
+<!DOCTYPE html> 
+<html lang="de"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MainWeb</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="assets/MainWeb Logo .png"> 
+</head> 
+ 
+<body> 
+ 
+    <header id="home" class="header"> 
+        <h1> 
+            <span class="dunkelblau">Main</span><span class="blau">Web</span> 
+        </h1> 
+ 
+        <a href="index.html"> 
+        <img class="logo" src="assets/MainWeb Logo .png"> 
+        </a> 
+ 
+        <nav class="navbar"> 
+            <a href="index.html">Home</a> 
+            <a href="über.html">Über uns</a> 
+            <a href="über.html">Impressum</a>
+            <a href="#anfrage">Anfrage</a> 
+            <a href="abo.html">Premium</a> 
+            <a href="login.html">Anmelden</a> 
+        </nav> 
+    </header> 
+ 
+ 
+ 
+    <div class="start"> 
+        <div class="start-box"> 
+            <h2>Fang jetzt an!</h2> 
+            <p>Ganz einfach eine Anfrage über unser AnfrageFormula senden.</p> 
+            <p>Und innerhalb von 2-3 Tagen eine Antwort erhalten!</p> 
+            <p>Je nachdem wie Groß oder aufwendig es ist, wir erstellen Ihnen Ihre eigene Website.</p> 
+            <a href="#anfrage">    
+            <button>Leg jetzt los!</button> 
+            </a>  
+        </div> 
+    </div> 
+ 
+ 
+    <div id="überuns" class="überuns"> 
+        <h2> 
+            <span class="dunkelblau">Über</span><span class="blau">uns</span> 
+        </h2> 
+        <div class="übertext"> 
+            <h3>Willkommen</h3> 
+            <p>Hallo ich heiße Malte Lehmann und ich bin 14 Jahre alt.</p> 
+            <p>Mit 14 Jahren hat man nicht viele Einnahme Quellen.</p> 
+            <p>Deshalb Verkaufe ich das was ich gerade am besten kann <strong>Websiten.</strong></p> 
+            <p>Also sendet Anfragen und habt in weniger als 1ner Woche Deine eigene Website.</p> 
+            <img src="assets/Malte bild.png" alt=""> 
+             
+            <div class="m_bild"> 
+                 
+            </div> 
+        </div> 
+ 
+    </div> 
+ 
+    <div id="anfrage" class="anfrage"> 
+        <h2> 
+            <span class="dunkelblau">An</span><span class="blau">frage</span> 
+        </h2> 
+ 
+        <p>Jetzt einfach anfragen</p> 
+ 
+        <form action="/anfrage" method="post" class="card-anfrage"> 
+            <label for="name">Name</label> 
+            <input type="text" placeholder="Max Mustermann" required> 
+ 
+            <label for="besch">Beschreibung</label> 
+            <textarea placeholder="Was möchtst du haben..."></textarea> 
+ 
+            <label for="date">Datum</label> 
+            <input type="datetime-local"> 
+ 
+ 
+            <label for="foto">Foto</label> 
+            <input type="file"> 
+ 
+ 
+            <button type="submit">Anfragen</button> 
+        </form> 
+    </div> 
+ 
+ 
+    <div action="/abo" id="premiumTitle" class="premium"> 
+        <h2><span class="dunkelblau">Prem</span><span class="blau">ium</span></h2> 
+        <div class="vipcard"> 
+            <div class="info"> 
+                <h2 id="Standart"><span class="dunkelblau">Stan</span><span class="blau">dart</span></h2> 
+ 
+                <p>Jetzt eine Domain für denn besten Preis den es gibt.</p> 
+                <p>Domain + E-mail Postfach+ 1T Speicherplatz</p> 
+ 
+                <button id="standartButton" type="button">Buchen und Checkout</button> 
+            </div> 
+         
+ 
+ 
+            <div class="info"> 
+                <h2 id="Standartplus"><span class="dunkelblau">Stan</span><span class="blau">dart +</span></h2> 
+ 
+                <p>Jetzt einfach online kaufen und selber Geld machen</p> 
+                <p>2 Domain's + E-Mail + 2T Speicherplatz</p> 
+ 
+                <button id="standartplusButton" type="button">Buchen und Checkout</button> 
+            </div> 
+ 
+ 
+            <div class="info"> 
+                <h2 id="Premium"><span class="dunkelblau">Prem</span><span class="blau">ium</span></h2> 
+ 
+                <p>Hab alle Vorteile und mach noch mehr Geld.</p> 
+                <p>5 Domain's + E-Mail Postfach + 5T Speicherplatz + Datenbank</p> 
+ 
+                <button id="premiumButton" type="button">Buchen und Checkout</button> 
+            </div> 
+        </div> 
+    </div> 
+ 
+    <footer> 
+        <h5>MainWeb © 2026</h5> 
+    </footer> 
+</body> 
+<script src="script.js"></script> 
+ 
 </html>

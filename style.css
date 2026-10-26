@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     padding: 0;
     margin: 0;
@@ -101,10 +106,12 @@ header .logo {
 
 
 .überuns h2 {
+    padding: 10px 10px;
+    text-align: center;
     margin-top: 100px;
     border: none;
     border-radius: 8px;
-    background: blue;
+    background: white;
 }
 
 
@@ -161,36 +168,36 @@ header .logo {
 
 
 .card input {
-padding: 10px 10px;
-border: none;
-border-radius: 8px;
-color: blue;
-font-weight: 700;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    color: blue;
+    font-weight: 700;
 }
 
 .card input:hover {
-transition: 0.5s;
-transform: scale(1.02);
-border-top: 3px solid blue;
-outline: none;
+    transition: 0.5s;
+    transform: scale(1.02);
+    border-top: 3px solid blue;
+    outline: none;
 }
 
-.card input:focus{
-transform: scale(1.05);
+.card input:focus {
+    transform: scale(1.05);
 }
 
 .card button {
-padding: 10px 10px;
-border: none;
-border-radius: 8px;
-font-weight: 700;
-cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-.card button:hover{
+.card button:hover {
     transition: 0.5s;
-background: blue;
-color: white;
+    background: blue;
+    color: white;
 }
 
 
@@ -200,5 +207,235 @@ color: white;
 }
 
 .blau {
-color: blue;
+    color: blue;
+}
+
+
+.anfrage {
+    text-align: center;
+}
+
+.anfrage h2 {
+    background: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+.card-anfrage {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 11px;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+
+.card-anfrage input {
+    outline: none;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+
+
+.card-anfrage input[type="file"]::file-selector-button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.card-anfrage input[type="file"]::file-selector-button:hover {
+    background: rgb(2, 2, 138);
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+
+.card-anfrage input:focus {
+    border-bottom: 2px solid blue;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+
+.card-anfrage textarea {
+    border-radius: 8px;
+    resize: none;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+.card-anfrage textarea:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+
+.card-anfrage button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+    font-weight: 700;
+}
+
+.card-anfrage button:hover {
+    background: rgb(2, 2, 131);
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+
+.vipcard {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+.premium h2 {
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 10px;
+}
+
+.info {
+    border: 2px solid blue;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.info h2 {
+    background: white;
+    border-radius: 8px;
+}
+
+
+.info button {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    background: blue;
+    color: white;
+    font-weight: 700;
+}
+
+
+.info button:hover {
+    background: rgb(3, 3, 129);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: rgb(1, 1, 31);
+    padding: 10px 10px;
+    color: rgba(128, 128, 128, 0.178);
+}
+
+
+.chackout h1 {
+text-align: center;
+border: none;
+border-radius: 8px;
+background: white;
+width: 20%;
+margin: 0 auto;
+margin-top: 10px;
+}
+
+.abo-card-title {
+text-align: center;
+margin-top: 20px;
+font-weight: 700;
+}
+
+
+.abo-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0;
+    border: 2px solid white;
+    background: white;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-weight: 700;
+}
+
+
+.abo-card input {
+    outline: none;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: blue;
+}
+
+.abo-card input:focus {
+    border-top: 2px solid blue;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.abo-card input:hover{
+border-top: 2px solid blue;
+transition: 0.5s;
+transform: scale(1.02);
+}
+
+
+.abo-card p {
+    color: blue;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.abo-card button {
+padding: 10px 10px;
+border: 1px solid blue;
+border-radius: 8px;
+font-weight: 700;
+}
+
+.abo-card button:hover{
+border: none;
+background: blue;
+color: white;
+transition: 0.5s;
 }
